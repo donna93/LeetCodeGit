@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,8 +27,50 @@ import java.util.List;
  *
  * [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).
  */
-//public class PacificAltlanticWaterFlow {
-//    public List<int[]> pacificAtlantic(int[][] matrix) {
-//
-//    }
-//}
+public class PacificAltlanticWaterFlow {
+    private int m, n;
+    private int[][] matrix;
+    private int[][] direction = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+    public List<int[]> pacificAtlantic(int[][] matrix) {
+        m = matrix.length;
+        n = matrix[0].length;
+        List<int[]> ret = new ArrayList<>();
+
+        this.matrix = matrix;
+        boolean[][] canReachA = new boolean[m][n];
+        boolean[][] canReachP = new boolean[m][n];
+
+        for(int i = 0; i < m; i++){
+            dfs(i, 0, canReachA);
+            dfs(i, n - 1, canReachP);
+        }
+
+        for(int i = 0; i < n; i++){
+            dfs(0, i, canReachA);
+            dfs(m - 1, i, canReachP);
+        }
+
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
+                if(canReachA[i][j] && canReachP[i][j]){
+                    ret.add(new int[]{i, j});
+                }
+            }
+        }
+        return ret;
+    }
+    public void dfs(int r, int c, boolean[][] canReach){
+        if(canReach[r][c]){
+            return;
+        }
+        canReach[r][c] = true;
+        for(int[] d : direction){
+            int nextR = r + d[0];
+            int nextC = c + d[1];
+            if(nextR < 0 || nextR >= m || nextC < 0 || nextC >= n || matrix[r][c] > matrix[nextR][nextC]){
+                continue;
+            }
+            dfs(nextR, nextC, canReach);
+        }
+    }
+}
