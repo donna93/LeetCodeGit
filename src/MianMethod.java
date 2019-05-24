@@ -4,17 +4,19 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-        char[][] board = {
-                {'A','B','C','E'},
-                {'S','F','C','S'},
-                {'A','D','E','E'}
-        };
-        String word1 = "ABCCED"; //, return true.
-        String word2 = "SEE"; //return true.
-        String word3 = "ABCB"; // return false.
-
-        System.out.println(new WordSearch().exist(board, word1));
-        System.out.println(new WordSearch().exist(board, word2));
-        System.out.println(new WordSearch().exist(board, word3));
+//        Example:
+// * Input: [1,2,3]
+// * Output:
+// * [
+// *   [1,2,3],
+// *   [1,3,2],
+// *   [2,1,3],
+// *   [2,3,1],
+// *   [3,1,2],
+// *   [3,2,1]
+// * ]
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> list = new Permutations().permute(nums);
+        System.out.println(list.toString());
     }
 }
