@@ -4,25 +4,31 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//        Example 1:
-// * Input: candidates = [2,3,6,7], target = 7,
+//   Example 1:
+// * Input: candidates = [10,1,2,7,6,1,5], target = 8,
 // * A solution set is:
 // * [
-// *   [7],
-// *   [2,2,3]
+// *   [1, 7],
+// *   [1, 2, 5],
+// *   [2, 6],
+// *   [1, 1, 6]
 // * ]
 // *
 // * Example 2:
-// * Input: candidates = [2,3,5], target = 8,
+// * Input: candidates = [2,5,2,1,2], target = 5,
 // * A solution set is:
 // * [
-// *   [2,2,2,2],
-// *   [2,3,3],
-// *   [3,5]
+// *   [1,2,2],
+// *   [5]
 // * ]
 
-        int[] candidates = {2,3,6,7};
-        List<List<Integer>> combinationList = new CombinationSum().combinationSum(candidates, 7);
+        int[] candidates = {10,1,2,7,6,1,5};
+        int[] candidates2 = {2,5,2,1,2};
+
+        List<List<Integer>> combinationList = new CombinationSumII().combinationSum2(candidates, 8);
         System.out.println(combinationList.toString());
+
+        List<List<Integer>> combinationList2 = new CombinationSumII().combinationSum2(candidates2, 5);
+        System.out.println(combinationList2.toString());
     }
 }
