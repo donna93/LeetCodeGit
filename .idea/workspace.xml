@@ -14,8 +14,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MianMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="142">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PalindromePartitioning.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
@@ -55,6 +55,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SudokuSolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -108,18 +117,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PermutationII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Combinations.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -147,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/KthLargestEleInArray.java" />
         <option value="$PROJECT_DIR$/src/TopKFrequentEle.java" />
         <option value="$PROJECT_DIR$/src/SortCharactersByFrequency.java" />
         <option value="$PROJECT_DIR$/src/SortColors.java" />
@@ -196,15 +192,17 @@
         <option value="$PROJECT_DIR$/src/CombinationSumIII.java" />
         <option value="$PROJECT_DIR$/src/Subset.java" />
         <option value="$PROJECT_DIR$/src/SubsetII.java" />
-        <option value="$PROJECT_DIR$/src/MianMethod.java" />
         <option value="$PROJECT_DIR$/src/PalindromePartitioning.java" />
+        <option value="$PROJECT_DIR$/src/MianMethod.java" />
+        <option value="$PROJECT_DIR$/src/SudokuSolver.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="815" />
-    <option name="width" value="1125" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="283" />
+    <option name="y" value="5" />
+    <option name="width" value="1440" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -235,7 +233,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558746215095" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558801672459" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,18 +324,18 @@
       <workItem from="1556301306646" duration="162000" />
       <workItem from="1556304423395" duration="744000" />
       <workItem from="1556561150073" duration="8105000" />
-      <workItem from="1558485908669" duration="41455000" />
+      <workItem from="1558485908669" duration="47672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148500000" />
+    <option name="totallyTimeSpent" value="154717000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="510" y="0" width="1152" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22802198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -346,7 +344,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.4022663" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.33381504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -355,7 +353,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.4362606" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32803467" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -381,13 +379,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/function/ToIntFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AssignCookies.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -780,16 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MianMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PartitionLabels.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -807,6 +788,23 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MianMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
         </state>
       </provider>
     </entry>
