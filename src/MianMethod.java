@@ -4,19 +4,16 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//* Example 1:
-// * Input: m = 3, n = 2
-// * Output: 3
-// * Explanation:
-// * From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
-// * 1. Right -> Right -> Down
-//                * 2. Right -> Down -> Right
-//                * 3. Down -> Right -> Right
-//                *
-// * Example 2:
-// * Input: m = 7, n = 3
-// * Output: 28
-        System.out.println(new UniquePath().uniquePaths(3, 2));
-        System.out.println(new UniquePath().uniquePaths(7, 3));
+//        Example:
+// * Given nums = [-2, 0, 3, -5, 2, -1]
+// *
+// * sumRange(0, 2) -> 1
+//                * sumRange(2, 5) -> -1
+//                * sumRange(0, 5) -> -3
+        int[] num = {-2, 0, 3, -5, 2, -1};
+        NumArray n = new NumArray(num);
+        System.out.println(n.sumRange(0, 2));
+        System.out.println(n.sumRange(2, 5));
+        System.out.println(n.sumRange(0, 5));
     }
 }
