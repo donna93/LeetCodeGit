@@ -18,7 +18,7 @@ import java.util.Queue;
  * Explanation: 13 = 4 + 9.
  */
 public class PerfectSquares {
-    public static int numSquares(int n) {
+    public int numSquares(int n) {
         List<Integer> squares = generateSquares(n);
         Queue<Integer> queue = new LinkedList<>();
         queue.add(n);
@@ -44,7 +44,7 @@ public class PerfectSquares {
             }
         }return -1;
     }
-    public static List<Integer> generateSquares(int n){
+    public List<Integer> generateSquares(int n){
         List<Integer> squares = new ArrayList<>();
         int s = 1;
         int diff = 3;
