@@ -4,12 +4,10 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//   Example:
-// *
-// * Input: [10,9,2,5,3,7,101,18]
-// * Output: 4
-        int[] input = {10,9,2,5,3,7,101,18};
-        System.out.println(new LongIncreasingSubsequence().lengthOfLIS(input));
-        System.out.println(new LongIncreasingSubsequence().lengthOfLIS2(input));
+//   Example 1:
+// * Input: [[1,2], [2,3], [3,4]]
+// * Output: 2
+        int[][] paris = {{1, 2}, {2, 3}, {3, 4}};
+        System.out.println(new MaxLenOfPairChain().findLongestChain(paris));
     }
 }
