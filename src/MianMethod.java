@@ -5,17 +5,16 @@ import java.util.List;
 public class MianMethod {
     public static void main(String[] args){
 //   Example 1:
-// * Input: Array = {"10", "0001", "111001", "1", "0"}, m = 5, n = 3
-// * Output: 4
-// * Explanation: This are totally 4 strings can be formed by the using of 5 0s and 3 1s, which are “10,”0001”,”1”,”0”
-// *
-// *
+// * Input: coins = [1, 2, 5], amount = 11
+//                * Output: 3
+//                * Explanation: 11 = 5 + 5 + 1
+//                *
 // * Example 2:
-// * Input: Array = {"10", "0", "1"}, m = 1, n = 1
-// * Output: 2
-        String[] strs = {"10", "0001", "111001", "1", "0"};
-        String[] strs2 = {"10", "0", "1"};
-        System.out.println(new OnesAndZeros().findMaxForm(strs, 5, 3));
-        System.out.println(new OnesAndZeros().findMaxForm(strs2, 1, 1));
+// * Input: coins = [2], amount = 3
+// * Output: -1
+        int[] coins1 = {1, 2, 5};
+        int[] coins2 = {2};
+        System.out.println(new CoinChange().coinChange(coins1, 11));
+        System.out.println(new CoinChange().coinChange(coins2, 3));
     }
 }
