@@ -34,7 +34,7 @@ public class BestTimeToBuySellStockIV {
             int localMax = maxProfit[i - 1][0] - prices[0];
             for (int j = 1; j < n; j++){
                 maxProfit[i][j] = Math.max(localMax + prices[j], maxProfit[i][j - 1]);
-                localMax = Math.max(localMax, maxProfit[i][j - 1] - prices[j]);
+                localMax = Math.max(localMax, maxProfit[i - 1][j] - prices[j]);
             }
         }
         return maxProfit[k][n - 1];
