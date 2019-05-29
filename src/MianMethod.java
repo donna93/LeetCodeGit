@@ -4,12 +4,10 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//        Example:
-// * nums = [1, 2, 3]
-// * target = 4
-
-       // 7
-        int[] nums = {1, 2, 3};
-        System.out.println(new CombinationSumIV().combinationSum4(nums, 4));
+//   Example:
+// * Input: [1,2,3,0,2]
+// * Output: 3
+        int[] input = {1, 2, 3, 0, 2};
+        System.out.println(new BestTimeBuySellStockCooldown().maxProfit(input));
     }
 }
