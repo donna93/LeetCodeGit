@@ -4,22 +4,17 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//* Example 1:
-// * Input: [3,3,5,0,0,3,1,4]
-// * Output: 6
-
+// * Example 1:
+// * Input: [2,4,1], k = 2
+//                * Output: 2
+//                * Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
+//                *
 // * Example 2:
-// * Input: [1,2,3,4,5]
-// * Output: 4
-// *
-// * Example 3:
-// * Input: [7,6,4,3,1]
-// * Output: 0
-        int[] input1 = {3,3,5,0,0,3,1,4};
-        int[] input2 = {1,2,3,4,5};
-        int[] input3 = {7,6,4,3,1};
-        System.out.println(new BestTimeToBuySellStockIII().maxProfit(input1));
-        System.out.println(new BestTimeToBuySellStockIII().maxProfit(input2));
-        System.out.println(new BestTimeToBuySellStockIII().maxProfit(input3));
+// * Input: [3,2,6,5,0,3], k = 2
+//                * Output: 7
+        int[] input1 = {2,4,1};
+        int[] input2 = {3,2,6,5,0,3};
+        System.out.println(new BestTimeToBuySellStockIV().maxProfit(2, input1));
+        System.out.println(new BestTimeToBuySellStockIV().maxProfit(2, input2));
     }
 }
