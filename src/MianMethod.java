@@ -5,16 +5,14 @@ import java.util.List;
 public class MianMethod {
     public static void main(String[] args){
 // * Example 1:
-// * Input: 3
-// * Output: 0
-// * Explanation: 3! = 6, no trailing zero.
-// *
+// * Input: a = "11", b = "1"
+// * Output: "100"
+//
 // * Example 2:
-// * Input: 5
-// * Output: 1
-// * Explanation: 5! = 120, one trailing zero.
+// * Input: a = "1010", b = "1011"
+// * Output: "10101"
 
-        System.out.println(new FactorialTrailingZeroes().trailingZeroes(3));
-        System.out.println(new FactorialTrailingZeroes().trailingZeroes(5));
+        System.out.println(new AddBinary().addBinary("11", "1"));
+        System.out.println(new AddBinary().addBinary("1010", "1011"));
     }
 }
