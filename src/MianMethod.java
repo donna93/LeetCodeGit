@@ -12,7 +12,7 @@ public class MianMethod {
 // * Input: a = "1010", b = "1011"
 // * Output: "10101"
 
-        System.out.println(new AddBinary().addBinary("11", "1"));
-        System.out.println(new AddBinary().addBinary("1010", "1011"));
+        System.out.println(new AddStrings().addStrings("20","1000"));
+        System.out.println(new AddStrings().addStrings("20","125"));
     }
 }
