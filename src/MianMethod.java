@@ -5,18 +5,16 @@ import java.util.List;
 public class MianMethod {
     public static void main(String[] args){
 // * Example 1:
-// * Input:
-// * 26
-// * Output:
-// * "1a"
-//                *
+// * Input: 3
+// * Output: 0
+// * Explanation: 3! = 6, no trailing zero.
+// *
 // * Example 2:
-// * Input:
-// * -1
-// * Output:
-// * "ffffffff"
+// * Input: 5
+// * Output: 1
+// * Explanation: 5! = 120, one trailing zero.
 
-        System.out.println(new ConvertNbrToHexadecimal().toHex(26));
-        System.out.println(new Base7().convertToBase7(-1));
+        System.out.println(new FactorialTrailingZeroes().trailingZeroes(3));
+        System.out.println(new FactorialTrailingZeroes().trailingZeroes(5));
     }
 }
