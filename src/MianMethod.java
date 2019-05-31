@@ -4,15 +4,8 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-// * Example 1:
-// * Input: a = "11", b = "1"
-// * Output: "100"
-//
-// * Example 2:
-// * Input: a = "1010", b = "1011"
-// * Output: "10101"
-
-        System.out.println(new AddStrings().addStrings("20","1000"));
-        System.out.println(new AddStrings().addStrings("20","125"));
+        int[] array1 = {4, 3, 3, 6,6,6, 7};
+        int j = new MinimumMovestoEqualArrayEleII().partition(array1, 0, 3);
+        System.out.println(Arrays.toString(array1) + " j: " + j);
     }
 }
