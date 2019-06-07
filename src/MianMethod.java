@@ -5,15 +5,19 @@ import java.util.List;
 public class MianMethod {
     public static void main(String[] args){
 // * Example 1:
-// * Input: [1,3,4,2,2]
-// * Output: 2
-//                *
+// * Input: n = 3, k = 1
+// * Output: [1, 2, 3]
+// * Explanation: The [1, 2, 3] has three different
+// * positive integers ranging from 1 to 3, and the [1, 1] has exactly 1 distinct integer: 1.
+// *
 // * Example 2:
-// * Input: [3,1,3,4,2]
-// * Output: 3
-        int[] nums1 = {1,3,4,2,2};
-        int[] nums2 = {3,1,3,4,2};
-        System.out.println(new FindDuplicateNbr().findDuplicate2(nums1));
-        System.out.println(new FindDuplicateNbr().findDuplicate2(nums2));
+// * Input: n = 3, k = 2
+// * Output: [1, 3, 2]
+// * Explanation: The [1, 3, 2] has three different
+// * positive integers ranging from 1 to 3, and the [2, 1] has exactly 2 distinct integers: 1 and 2.
+        int[] ret1 = new BeautifulArragement().constructArray(3, 1);
+        System.out.println(Arrays.toString(ret1));
+        int[] ret2 = new BeautifulArragement().constructArray(3, 2);
+        System.out.println(Arrays.toString(ret2));
     }
 }
