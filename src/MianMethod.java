@@ -4,10 +4,14 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-// * Example 1:
-// * Input: nums = [1,2,2,4]
-// * Output: [2,3]
-        int[] array = new SetMismatch().findErrorNums(new int[]{1, 2, 3, 3, 5});
-        System.out.println(Arrays.toString(array));
+//        Input:
+// * [4,3,2,7,8,2,3,1]
+// *
+// * Output:
+// * [5,6]
+        int[] nums = new int[]{4,3,2,7,8,2,3,1};
+        List<Integer> list = new FindAllNbrsDisappearedInArr().findDisappearedNumbers(nums);
+        System.out.println(Arrays.toString(nums));
+        System.out.println(list.toString());
     }
 }
