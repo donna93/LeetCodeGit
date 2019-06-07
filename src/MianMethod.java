@@ -4,14 +4,16 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//        Input:
-// * [4,3,2,7,8,2,3,1]
-// *
-// * Output:
-// * [5,6]
-        int[] nums = new int[]{4,3,2,7,8,2,3,1};
-        List<Integer> list = new FindAllDuplicatesInArr().findDuplicates(nums);
-        System.out.println(Arrays.toString(nums));
-        System.out.println(list.toString());
+// * Example 1:
+// * Input: [1,3,4,2,2]
+// * Output: 2
+//                *
+// * Example 2:
+// * Input: [3,1,3,4,2]
+// * Output: 3
+        int[] nums1 = {1,3,4,2,2};
+        int[] nums2 = {3,1,3,4,2};
+        System.out.println(new FindDuplicateNbr().findDuplicate2(nums1));
+        System.out.println(new FindDuplicateNbr().findDuplicate2(nums2));
     }
 }
