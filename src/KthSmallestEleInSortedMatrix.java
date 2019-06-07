@@ -44,4 +44,20 @@ public class KthSmallestEleInSortedMatrix {
             return this.val - that.val;
         }
     }
+    public int kthSmallest2(int[][] matrix, int k){
+        int n = matrix.length, m = matrix[0].length;
+        int low = matrix[0][0], high = matrix[n - 1][m - 1];
+        while (low <= high){
+            int mid = low + (high - low) / 2;
+            int cnt = 0;
+            for (int i = 0; i < n; i++){
+                for (int j = 0; j < m && matrix[i][j] <= mid; j++){
+                    cnt++;
+                }
+            }
+            if (cnt < k)low = mid + 1;
+            else high = mid - 1;
+        }
+        return low;
+    }
 }
