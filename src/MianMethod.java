@@ -10,7 +10,7 @@ public class MianMethod {
 // * Output:
 // * [5,6]
         int[] nums = new int[]{4,3,2,7,8,2,3,1};
-        List<Integer> list = new FindAllNbrsDisappearedInArr().findDisappearedNumbers(nums);
+        List<Integer> list = new FindAllDuplicatesInArr().findDuplicates(nums);
         System.out.println(Arrays.toString(nums));
         System.out.println(list.toString());
     }
