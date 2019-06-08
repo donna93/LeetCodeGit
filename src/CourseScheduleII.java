@@ -54,7 +54,8 @@ public class CourseScheduleII {
         }
         return order;
     }
-    public boolean hasCycle(boolean[] localMarked, boolean[] globalMarked, List<Integer>[] graphic, int curNode, Stack<Integer> postOrder){
+    public boolean hasCycle(boolean[] localMarked, boolean[] globalMarked, List<Integer>[] graphic,
+                            int curNode, Stack<Integer> postOrder){
         if (localMarked[curNode]) return true;
         if (globalMarked[curNode]) return false;
         localMarked[curNode] = true;
