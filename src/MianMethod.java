@@ -5,18 +5,39 @@ import java.util.List;
 public class MianMethod {
     public static void main(String[] args){
 //* Example 1:
-// * Input: arr = [4,3,2,1,0]
-// * Output: 1
+// * Input: [[1,3], [0,2], [1,3], [0,2]]
+// * Output: true
 //                * Explanation:
-// * Splitting into two or more chunks will not return the required result.
-// * For example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn't sorted.
-//                *
+// * The graph looks like this:
+// * 0----1
+// * |    |
+// * |    |
+// * 3----2
+// * We can divide the vertices into two groups: {0, 2} and {1, 3}.
+// *
 // * Example 2:
-// * Input: arr = [1,0,2,3,4]
-// * Output: 4
-        int[] input1 = {4,3,2,1,0};
-        int[] input2 = {1,0,2,3,4};
-        System.out.println(new MaxChunksToMakeSorted().maxChunksToSorted(input1));
-        System.out.println(new MaxChunksToMakeSorted().maxChunksToSorted(input2));
+// * Input: [[1,2,3], [0,2], [0,1,3], [0,2]]
+// * Output: false
+//                * Explanation:
+// * The graph looks like this:
+// * 0----1
+// * | \  |
+// * |  \ |
+// * 3----2
+// * We cannot find a way to divide the set of nodes into two independent subsets.
+        int[][] graph1 = {
+                {1, 3},
+                {0, 2},
+                {1, 3},
+                {0, 2}
+        };
+        int[][] graph2 = {
+                {1, 2, 3},
+                {0, 2},
+                {0, 1, 3},
+                {0, 2},
+        };
+        System.out.println(new IsGraphBipartite().isBipartite(graph1));
+        System.out.println(new IsGraphBipartite().isBipartite(graph2));
     }
 }
