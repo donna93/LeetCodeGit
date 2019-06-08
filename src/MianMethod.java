@@ -4,40 +4,18 @@ import java.util.List;
 
 public class MianMethod {
     public static void main(String[] args){
-//* Example 1:
-// * Input: [[1,3], [0,2], [1,3], [0,2]]
+//   Example 1:
+// * Input: 2, [[1,0]]
 // * Output: true
-//                * Explanation:
-// * The graph looks like this:
-// * 0----1
-// * |    |
-// * |    |
-// * 3----2
-// * We can divide the vertices into two groups: {0, 2} and {1, 3}.
+// * Explanation: There are a total of 2 courses to take.
+// *              To take course 1 you should have finished course 0. So it is possible.
 // *
 // * Example 2:
-// * Input: [[1,2,3], [0,2], [0,1,3], [0,2]]
+// * Input: 2, [[1,0],[0,1]]
 // * Output: false
-//                * Explanation:
-// * The graph looks like this:
-// * 0----1
-// * | \  |
-// * |  \ |
-// * 3----2
-// * We cannot find a way to divide the set of nodes into two independent subsets.
-        int[][] graph1 = {
-                {1, 3},
-                {0, 2},
-                {1, 3},
-                {0, 2}
-        };
-        int[][] graph2 = {
-                {1, 2, 3},
-                {0, 2},
-                {0, 1, 3},
-                {0, 2},
-        };
-        System.out.println(new IsGraphBipartite().isBipartite(graph1));
-        System.out.println(new IsGraphBipartite().isBipartite(graph2));
+        int[][] matrix1 = {{1, 0}};
+        int[][] matrix2 = {{1, 0},{0, 1}};
+        System.out.println(new CourseSchedule().canFinish(2, matrix1));
+        System.out.println(new CourseSchedule().canFinish(2, matrix2));
     }
 }
